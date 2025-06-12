@@ -26,7 +26,7 @@ function submit(){
     display(BookMarkList)
     saveToLocalStorage(BookMarkList)
     
-    console.log(BookMarkList)
+  clearInputs()
    } else{
     alert("Not Valid ")
    }
@@ -100,4 +100,9 @@ if (!urlRegex.test(input2.value)) {
     input2.classList.add("is-valid")
     return true
 }
+}
+
+function clearInputs (){
+  input1.value = "";
+  input2.value = "";
 }
