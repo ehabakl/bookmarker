@@ -1,0 +1,28 @@
+.main-h{
+    position: relative;
+    width: fit-content;
+}
+
+.main-h:before {
+ content: "";
+ position: absolute;
+ bottom: 0;
+ height: 20%;
+ width: 100%;
+ background-color: #fec260;
+ z-index: -1;
+ transition: all .5s;
+}
+
+.main-h:hover:before{
+    height: 40%; 
+}
+
+.secondary-h{
+  background: linear-gradient(to right, #4CAF50, #A5B835);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   display: inline-block;
+   
+
+}

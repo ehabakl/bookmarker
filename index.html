@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover to Speak</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="container">
+  
+        <h1 class="main-h mx-auto my-5 fs-1">Bookmarker</h1>
+        <hr class="border-dotted">
+     <div class="text-center">
+              <h2 class="secondary-h mx-auto  my-5">
+              <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites 
+              <i class="fa-solid fa-bookmark"></i>
+        </h2>
+     </div>
+            
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label fs-4"><i class="fa-solid fa-floppy-disk"></i> Site Name</label>
+  <input oninput="validateSiteName ()" id="input1" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Bookmark Name">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label fs-4"><i class="fa-solid fa-link"></i> Site URL</label>
+  <input oninput="validateSiteUrl ()" id="input2" type="email" class="form-control" id="exampleFormControlInput1" placeholder="WebSite URL">
+</div>
+<button onclick="submit()" class="btn btn-primary">Submit</button>
+
+<div class="dataTable">
+      <hr class="border-dotted">
+  <table class="table text-center table-bordered align-middle bg-white">
+    <thead class="table-light">
+      <tr>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Facebook</td>
+        <td>
+          <a href="https://facebook.com" target="_blank" class="btn btn-success" style="background-color:#a5b835; border-color:#a5b835;">
+            <i class="fas fa-eye"></i> Visit
+          </a>
+        </td>
+        <td>
+          <button class="btn btn-danger">
+            <i class="fas fa-trash-alt"></i> Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+  <script src="bootstrap.bundle.min.js"></script>
+ <script src="main.js"></script>
+</body>
+</html>
